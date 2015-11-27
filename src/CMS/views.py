@@ -1,10 +1,11 @@
 from django.shortcuts import render
 
-__author__ = 'praneethkumar'
 
 def home(request):
     name = "Praneeth"
     context = {
         "the_name" : name,
+        "number" : 12,
     }
     return render(request, "home.html", context)
+    #return render_to_response("home.html", context, context_instance=RequestContext(request))

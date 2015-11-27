@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Static Top Navbar Example for Bootstrap</title>
+    <title>{% block title %}{% endblock %}CMS</title>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
@@ -20,7 +20,17 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/navbar-static-top/navbar-static-top.css" rel="stylesheet">
+    <style>
+      body{
+        min-height : 2000px;
+      }
+      .navbar-static-top {
+        margin-bottom : 19 px;
+      }
+      {% block style %}
+
+      {% endblock %}
+    </style>
     {% include 'extra_head_info.html' %}
 
   </head>

@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
+
+{% block title %}Welcome |{% endblock %}
+
+<style>
+{% block style %}
+    h1{
+        color: red;
+    }
+{% endblock %}
+</style>
+
 {% block content %}
 
-<h1>Hello There</h1>
+<h1>Hello {{ the_name }} {{ number }}</h1>
 
 {% endblock %}
