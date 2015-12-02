@@ -16,10 +16,11 @@
 
 <p>{{ videos }}</p>
 
+
 {% for video in videos %}
 <p>
 {{ forloop.counter }})
-{{ video.embed_code }}
+{{ video.embed_code|safe }}
 </p>
 {% endfor %}
 

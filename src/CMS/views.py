@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.utils.safestring import mark_safe
 from videos.models import Video
 
 def home(request):
@@ -7,7 +7,8 @@ def home(request):
     videos = Video.objects.all()
     embeds = []
     for vid in videos:
-        embeds.append("%s" % (vid.embed_code))
+        code = mark_safe(vid.embed_code)
+        embeds.append("%s" % (code))
     context = {
         "the_name" : name,
         "number" : videos.count(),
