@@ -24,9 +24,18 @@
 </p>
 {% endfor %}
 
-<br />
+<br/>
+<br/>
+<h1>Mark Safe</h1>
+
+{{ a_code }}
+
 
 <h1>Embeds</h1>
-{{ the_embeds }}
+{% for embed in the_embeds %}
+
+{{ embed|safe }}
+
+{% endfor %}
 
 {% endblock %}

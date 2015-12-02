@@ -14,6 +14,7 @@ def home(request):
         "number" : videos.count(),
         "videos" : videos,
         "the_embeds" : embeds,
+        "a_code" : mark_safe(videos[0].embed_code),
     }
     return render(request, "home.html", context)
     #return render_to_response("home.html", context, context_instance=RequestContext(request))
