@@ -54,6 +54,8 @@ ROOT_URLCONF = 'CMS.urls'
 
 WSGI_APPLICATION = 'CMS.wsgi.application'
 
+LOGIN_URL = '/login/'
+
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
