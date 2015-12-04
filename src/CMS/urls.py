@@ -9,10 +9,16 @@ urlpatterns = patterns('',
     #url(r'^contact_us/$', TemplateView.as_view(template_name='pricing.html'), name='home'),
     url(r'^$', 'CMS.views.home', name='home'),
     url(r'^staff/$', 'CMS.views.staff_home', name='staff'),
-    url(r'^login/$', 'CMS.views.login', name='login'),
-
     # url(r'^about/about/about/', 'CMS.views.home', name='about'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+)
+
+#auth login/logout
+urlpatterns += patterns(
+    'CMS.views',
+    url(r'^login/$', 'auth_login', name='login'),
+    url(r'^logout/$', 'auth_logout', name='logout'),
+
 )
