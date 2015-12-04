@@ -2,6 +2,8 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.utils.safestring import mark_safe
 from videos.models import Video
 from django.contrib.auth.decorators import login_required
+from .forms import LoginForm
+
 
 #@login_required(login_url='/enroll/login/')
 @login_required
@@ -21,15 +23,6 @@ def home(request):
         }
         return render(request, "home.html", context)
         #return render_to_response("home.html", context, context_instance=RequestContext(request))
-
-@login_required(login_url='/staff/login')
-def staff_home(request):
-        context = {
-
-        }
-        return render(request, "home.html", context)
-        #return render_to_response("home.html", context, context_instance=RequestContext(request))
-
 
 
 #
@@ -55,3 +48,19 @@ def staff_home(request):
 #         else:
 #             return HttpResponseRedirect('/login/')
 #
+
+@login_required(login_url='/staff/login')
+def staff_home(request):
+        context = {
+
+        }
+        return render(request, "home.html", context)
+        #return render_to_response("home.html", context, context_instance=RequestContext(request))
+
+
+def login(request):
+    form = LoginForm()
+    context = {
+        "form" : form,
+    }
+    return render(request, "login.html", context)
