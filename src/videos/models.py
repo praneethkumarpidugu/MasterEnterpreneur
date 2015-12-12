@@ -39,6 +39,7 @@ class Video(models.Model):
 
 class Category(models.Model):
     title = models.CharField(max_length=120)
+    #videos = models.ManyToManyField(Video, null=True, blank=True)
     description = models.TextField(max_length=5000, null=True, blank=True)
     image = models.ImageField(upload_to='/image', null=True, blank=True)
     active = models.BooleanField(default=True)
@@ -48,4 +49,5 @@ class Category(models.Model):
 
     def __unicode__(self):
         return self.title
+
 
