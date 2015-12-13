@@ -25,7 +25,7 @@ class Video(models.Model):
     active = models.BooleanField(default=True)
     featured = models.BooleanField(default=False)
     free_preview = models.BooleanField(default=False)
-    category = models.ForeignKey("Category", null=True)
+    category = models.ForeignKey("Category", default=1)
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False, null=True)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True, null=True)
 
@@ -35,13 +35,15 @@ class Video(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("video_detail", kwargs={"id": self.id})
-
+        try:
+            return reverse("video_detail", kwargs={"id": self.id, "cat_slug" : self.category.slug})
+        except:
+            return "/"
 class Category(models.Model):
     title = models.CharField(max_length=120)
-    #videos = models.ManyToManyField(Video, null=True, blank=True)
     description = models.TextField(max_length=5000, null=True, blank=True)
     image = models.ImageField(upload_to='/image', null=True, blank=True)
+    slug = models.SlugField(default='abc', unique=True)
     active = models.BooleanField(default=True)
     featured = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
@@ -50,4 +52,5 @@ class Category(models.Model):
     def __unicode__(self):
         return self.title
 
-
+    def get_absolute_url(self):
+        return reverse("category_detail", kwargs={"cat_slug" : self.category.slug})
