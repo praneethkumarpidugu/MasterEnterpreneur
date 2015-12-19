@@ -27,6 +27,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+FULL_DOMAIN_NAME = 'http://wwww.masterentrepreneur.com'
 
 # Application definition
 
