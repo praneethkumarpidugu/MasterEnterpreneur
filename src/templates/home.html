@@ -11,6 +11,13 @@
 </style>
 
 {% block content %}
+<form method="POST" action="">{% csrf_token %}
+<form>
+    {{ form.as_p }}
+    <input class="btn btn-default" type="submit" value="Register" />
+</form>
+
+
 
 <h1>Hello {{ the_name }} {{ number }}</h1>
 

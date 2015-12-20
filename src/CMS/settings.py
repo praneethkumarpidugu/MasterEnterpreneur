@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'videos',
+    'accounts',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,6 +57,8 @@ ROOT_URLCONF = 'CMS.urls'
 WSGI_APPLICATION = 'CMS.wsgi.application'
 
 LOGIN_URL = '/login/'
+
+AUTH_USER_MODEL = 'accounts.MyUser'
 
 
 # Database

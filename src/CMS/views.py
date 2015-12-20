@@ -1,14 +1,23 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, HttpResponseRedirect
 from django.utils.safestring import mark_safe
-from videos.models import Video
 from django.contrib.auth.decorators import login_required
+from accounts.forms import RegisterForm
+from videos.models import Video
+
 from .forms import LoginForm
 
 
 #@login_required(login_url='/enroll/login/')
-@login_required
+# @login_required
 def home(request):
+        form = RegisterForm(request.POST or None)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password2']
+            print username, email, password
+
         name = "Praneeth"
         videos = Video.objects.all()
         embeds = []
@@ -16,6 +25,7 @@ def home(request):
             code = mark_safe(vid.embed_code)
             embeds.append("%s" % (code))
         context = {
+            "form" : form,
             "the_name" : name,
             "number" : videos.count(),
             "videos" : videos,

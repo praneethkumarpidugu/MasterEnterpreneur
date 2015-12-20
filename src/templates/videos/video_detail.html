@@ -6,15 +6,22 @@
 
         {% block jquery %}
         function update_iframe_size(){
-            $("iframe").css("width", "100%");
-            $("iframe").css("height", "100%");
 
-            var width = $("iframe").css("width");
-            var height = $("iframe").css("height");
-            console.log(width);
-            console.log(height);
+            var parent_id = $("iframe").parent().attr("id");
+            if(parent_id == "main_video"){
+                var parent_class = $("iframe").parent().attr("class");
+                var parent_width = $("iframe").parent().width();
+                console.log(parent_class);
+                var width = $("iframe").css("width");
+                var height = $("iframe").css("height");
+                var ratio = parseInt(height)/parseInt(width);
+                var new_height = parseInt(parent_width) * ratio
+
+                $("iframe").css("width", parent_width);
+                $("iframe").css("height", new_height);
+            }
         }
-
+            update_iframe_size();
             $(window).bind("resize", function(){
 
                 update_iframe_size();
@@ -25,7 +32,10 @@
 
 {% block content %}
 
+<!--if you wanted to change the size of the video change class of div to col-sm-* etc-->
+<div class="col-sm-12" id = "main_video">
 {{ obj.embed_code|safe }}
+</div>
 
 <br/>
 
