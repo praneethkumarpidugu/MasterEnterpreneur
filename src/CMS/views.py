@@ -6,7 +6,6 @@ from accounts.forms import RegisterForm
 from accounts.models import MyUser
 from videos.models import Video
 
-from .forms import LoginForm
 
 
 #@login_required(login_url='/enroll/login/')
@@ -82,22 +81,3 @@ def staff_home(request):
         #return render_to_response("home.html", context, context_instance=RequestContext(request))
 
 
-def auth_login(request):
-    form = LoginForm(request.POST or None)
-    next_url = request.GET.get('next')
-    if form.is_valid():
-        username = form.cleaned_data['username']
-        password = form.cleaned_data['password']
-        print username, password
-        user = authenticate(username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return HttpResponseRedirect(next_url)
-    context = {
-        "form" : form,
-    }
-    return render(request, "login.html", context)
-
-def auth_logout(request):
-    logout(request)
-    return HttpResponseRedirect('/')

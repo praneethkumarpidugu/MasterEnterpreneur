@@ -19,7 +19,7 @@ urlpatterns = patterns('',
 
 #auth login/logout
 urlpatterns += patterns(
-    'CMS.views',
+    'accounts.views',
     url(r'^login/$', 'auth_login', name='login'),
     url(r'^logout/$', 'auth_logout', name='logout'),
 
