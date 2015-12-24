@@ -94,4 +94,4 @@ class Category(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("category_detail", kwargs={"cat_slug" : self.category.slug})
+        return reverse("category_detail", kwargs={"cat_slug" : self.slug})
