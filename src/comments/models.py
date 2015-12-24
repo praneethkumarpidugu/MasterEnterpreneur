@@ -5,7 +5,7 @@ from videos.models import Video
 
 class CommentManager(models.Manager):
     def create_comment(self, user=None, comment=None, path=None, video=None):
-        if not Path:
+        if not path:
             raise ValueError("Must include a path when adding a comment")
         if not user:
             raise ValueError("Must include a user when adding a comment")
