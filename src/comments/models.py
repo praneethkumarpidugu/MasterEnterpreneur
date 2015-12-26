@@ -24,12 +24,16 @@ class CommentManager(models.Manager):
 class Comment(models.Model):
     user = models.ForeignKey(MyUser)
     path = models.CharField(max_length=350)
-    video = models.ForeignKey(Video)
+    video = models.ForeignKey(Video, null=True, blank=True)
     text = models.TextField()
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
     active = models.BooleanField(default=True)
 
     objects = CommentManager()
+
     def __unicode__(self):
         return self.user.username
+
+    def get_comment(self):
+        return self.text
