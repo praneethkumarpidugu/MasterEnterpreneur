@@ -58,9 +58,11 @@
             {{ comment_form.as_p }}
             <input type="submit" value="Add comment"/>
         </form>
+        <table class="table">
         {% for comment in comments %}
-            {{ comment.get_comment }}
+            <tr><td>{{ comment.get_comment }}</td></tr>
         {% endfor %}
+        </table>
     </div>
 </div>
 {% endblock %}

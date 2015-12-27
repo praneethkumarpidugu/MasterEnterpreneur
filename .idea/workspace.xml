@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a8b14553-1bf0-4314-8b75-b448421457b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comments/admin.py" afterPath="$PROJECT_DIR$/src/comments/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comments/forms.py" afterPath="$PROJECT_DIR$/src/comments/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comments/models.py" afterPath="$PROJECT_DIR$/src/comments/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/videos/video_detail.html" afterPath="$PROJECT_DIR$/src/templates/videos/video_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/videos/video_list.html" afterPath="$PROJECT_DIR$/src/templates/videos/video_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/videos/views.py" afterPath="$PROJECT_DIR$/src/videos/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/comments/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="660">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8041958" vertical-offset="0" max-vertical-offset="675">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -47,8 +46,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comments/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -60,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/CMS/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -69,20 +68,20 @@
       <file leaf-file-name="video_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/videos/video_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="600" max-vertical-offset="1065">
-              <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+            <state vertical-scroll-proportion="-10.625" vertical-offset="690" max-vertical-offset="1095">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/videos/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8041958" vertical-offset="30" max-vertical-offset="765">
-              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="825">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,10 +142,10 @@
         <option value="$PROJECT_DIR$/src/CMS/settings.py" />
         <option value="$PROJECT_DIR$/src/comments/admin.py" />
         <option value="$PROJECT_DIR$/src/templates/videos/video_list.html" />
-        <option value="$PROJECT_DIR$/src/comments/models.py" />
         <option value="$PROJECT_DIR$/src/comments/forms.py" />
         <option value="$PROJECT_DIR$/src/templates/videos/video_detail.html" />
         <option value="$PROJECT_DIR$/src/videos/views.py" />
+        <option value="$PROJECT_DIR$/src/comments/models.py" />
       </list>
     </option>
   </component>
@@ -886,12 +885,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/comments/models.py">
+    <entry file="file://$PROJECT_DIR$/src/templates/videos/video_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="660">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="690" max-vertical-offset="1095">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comments/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/videos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="825">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -899,35 +916,17 @@
     <entry file="file://$PROJECT_DIR$/src/CMS/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/comments/forms.py">
+    <entry file="file://$PROJECT_DIR$/src/comments/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8041958" vertical-offset="0" max-vertical-offset="675">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/videos/video_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="600" max-vertical-offset="1065">
-          <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/videos/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8041958" vertical-offset="30" max-vertical-offset="765">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

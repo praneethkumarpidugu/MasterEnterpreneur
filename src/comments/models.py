@@ -4,20 +4,20 @@ from videos.models import Video
 # Create your models here.
 
 class CommentManager(models.Manager):
-    def create_comment(self, user=None, comment=None, path=None, video=None):
+    def create_comment(self, user=None, text=None, path=None, video=None):
         if not path:
             raise ValueError("Must include a path when adding a comment")
         if not user:
             raise ValueError("Must include a user when adding a comment")
 
         comment = self.model(
-            user = user,
-            path = path,
-            comment = comment
+            user=user,
+            path=path,
+            text=text
         )
         if video is not None:
             comment.video = video
-        comment.save(using=self._db_)
+        comment.save(using=self._db)
         return comment
 
 
@@ -35,5 +35,6 @@ class Comment(models.Model):
     def __unicode__(self):
         return self.user.username
 
+    @property
     def get_comment(self):
         return self.text
