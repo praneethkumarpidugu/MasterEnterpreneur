@@ -42,6 +42,7 @@ def comment_create_view(request):
         if form.is_valid():
             comment_text = form.cleaned_data['comment']
             if parent_comment is not None:
+                #parent comment exists
                 new_comment = Comment.objects.create_comment(
                     user=request.user,
                     path=parent_comment.get_origin,
@@ -49,6 +50,7 @@ def comment_create_view(request):
                     video=video,
                     parent=parent_comment
                 )
+                messages.error(request, "Thank for your response.<a href='/somelink/'>Linked Item</a>", extra_tags='safe')
                 return HttpResponseRedirect(parent_comment.get_absolute_url())
             else:
                 new_comment = Comment.objects.create_comment(
@@ -57,6 +59,7 @@ def comment_create_view(request):
                     text=comment_text,
                     video=video
                 )
+                messages.success(request, "Thank you for the comment.")
                 return HttpResponseRedirect(new_comment.get_absolute_url())
         else:
             messages.error(request, "There was an error with your comment.")
