@@ -1,6 +1,6 @@
+from accounts.models import MyUser
 from django.core.urlresolvers import reverse
 from django.db import models
-from accounts.models import MyUser
 from videos.models import Video
 # Create your models here.
 
