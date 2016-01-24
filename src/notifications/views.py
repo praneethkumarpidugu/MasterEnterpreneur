@@ -30,12 +30,12 @@ def read(request, id):
         raise HttpResponseRedirect(reverse("notifications_all"))
 @login_required
 def get_notifications_ajax(request):
-    if request.ajax() and request.method == "POST":
+    if request.is_ajax() and request.method == "POST":
         notifications = Notification.objects.all_for_user(request.user).recent()
         count = notifications.count()
         notes = []
         for note in notifications:
-            notes.append(str(note))
+            notes.append(str(note.get_link))
         data = {
             "notifications": notes,
             "count": count,

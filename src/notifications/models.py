@@ -83,7 +83,26 @@ class Notification(models.Model):
                 return "%(sender)s %(verb)s <a href='%(verify_read)s?next=%(target_url)s'>%(target)s</a> with %(action)s" % context
             if self.action_object and not target_url:
                 return "%(sender)s %(verb)s %(target)s</a> with %(action)s" % context
-        return "%s(sender)s %(verb)s %(target)s" % context
+            return "%(sender)s %(verb)s %(target)s" % context
+        return "%(sender)s %(verb)s" %context
+    @property
+    def get_link(self):
+        try:
+            target_url = self.target_object.get_absolute_url()
+        except:
+            target_url = reverse("notifications_all")
+        context = {
+            "sender": self.sender_object,
+            "verb": self.verb,
+            "action": self.action_object,
+            "target": self.target_object,
+            "verify_read": reverse("notifications_read", kwargs={"id": self.id}),
+            "target_url": target_url,
+        }
+        if self.target_object:
+            return "<a href='%(verify_read)s?next=%(target_url)s'>%(sender)s %(verb)s %(target)s with %(action)s</a>" % context
+        else:
+            return "<a href='%(verify_read)s?next=%(target_url)s'>%(sender)s %(verb)s</a>" % context
 
 def new_notification(sender, **kwargs):
     print sender
