@@ -51,10 +51,12 @@ def comment_create_view(request):
                     video=video,
                     parent=parent_comment
                 )
+                affected_users = parent_comment.get_affected_users()
                 notify.send(request.user,
                             action=new_comment,
                             target=parent_comment,
                             recipient=parent_comment.user,
+                            affected_users=affected_users,
                             verb='replied to')
                 messages.success(request, "Thank for your response.", extra_tags='safe')
                 return HttpResponseRedirect(parent_comment.get_absolute_url())

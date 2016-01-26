@@ -109,6 +109,9 @@ def new_notification(sender, **kwargs):
     kwargs.pop('signal', None)
     recipient = kwargs.pop("recipient")
     verb = kwargs.pop("verb")
+    affected_users = kwargs.pop('affected_users')
+    print "affected users are"
+    print affected_users
     # target = kwargs.pop("target", None)
     # action = kwargs.pop("action", None)
     new_note = Notification(
