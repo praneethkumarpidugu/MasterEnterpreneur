@@ -67,11 +67,12 @@ def comment_create_view(request):
                     text=comment_text,
                     video=video
                 )
-                notify.send(request.user,
-                            recipient=request.user,
-                            action=new_comment,
-                            target=new_comment.video,
-                            verb='commented on')
+                #Option to send to super user or staff users
+                # notify.send(request.user,
+                #             recipient=request.user,
+                #             action=new_comment,
+                #             target=new_comment.video,
+                #             verb='commented on')
                 # notify.send(request.user, recipient=request.user, action='New comment added')
                 messages.success(request, "Thank you for the comment.")
                 return HttpResponseRedirect(new_comment.get_absolute_url())
