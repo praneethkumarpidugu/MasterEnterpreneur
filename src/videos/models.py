@@ -14,6 +14,8 @@ class VideoQuerySet(models.query.QuerySet):
         return self.filter(active=True)
     def featured(self):
         return self.filter(featured=True)
+    def has_embed(self):
+        return self.filter(embed_code__isnull=False).exclude(embed_code__exact="")
 
 
 class VideoManager(models.Manager):
@@ -23,7 +25,7 @@ class VideoManager(models.Manager):
         # return super(VideoManager, self).filter(featured=True)
         return self.get_queryset().active().featured()
     def all(self):
-        return self.get_queryset().active()
+        return self.get_queryset().active().has_embed()
 
 DEFAULT_MESSAGE = "check out this video."
 
@@ -87,7 +89,7 @@ class Category(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField(max_length=5000, null=True, blank=True)
     tags = GenericRelation("TaggedItem", null=True, blank=True)
-    image = models.ImageField(upload_to='/image', null=True, blank=True)
+    image = models.ImageField(upload_to='images/', null=True, blank=True)
     slug = models.SlugField(default='abc', unique=True)
     active = models.BooleanField(default=True)
     featured = models.BooleanField(default=False)
@@ -99,6 +101,9 @@ class Category(models.Model):
 
     def get_absolute_url(self):
         return reverse("category_detail", kwargs={"cat_slug" : self.slug})
+
+    def get_image_url(self):
+        return "%s%s" %(settings.MEDIA_URL, self.image)
 
 
 TAG_CHOICES = (

@@ -25,7 +25,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 FULL_DOMAIN_NAME = 'http://wwww.masterentrepreneur.com'
 
@@ -116,3 +116,6 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "templates"),
 )
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
