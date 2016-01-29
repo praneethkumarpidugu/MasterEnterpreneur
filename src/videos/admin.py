@@ -8,12 +8,14 @@ from .models import Video, Category, TaggedItem
 class TaggedItemInline(GenericTabularInline):
     model = TaggedItem
 
+class VideoInline(admin.TabularInline):
+    model = Video
 
 
 class VideoAdmin(admin.ModelAdmin):
     inlines = [TaggedItemInline]
     list_display = ["__unicode__", 'slug']
-    fields = ['title', 'share_message','embed_code',
+    fields = ['title', 'order', 'share_message','embed_code',
                  'active', 'featured',
                  'free_preview', 'category']
 
@@ -25,7 +27,7 @@ class VideoAdmin(admin.ModelAdmin):
 admin.site.register(Video, VideoAdmin)
 
 class CategoryAdmin(admin.ModelAdmin):
-    inlines = [TaggedItemInline]
+    inlines = [VideoInline, TaggedItemInline]
     class Meta:
         model = Category
 
