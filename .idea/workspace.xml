@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a8b14553-1bf0-4314-8b75-b448421457b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/videos/admin.py" afterPath="$PROJECT_DIR$/src/videos/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/videos/models.py" afterPath="$PROJECT_DIR$/src/videos/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/videos/video_detail.html" afterPath="$PROJECT_DIR$/src/templates/videos/video_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/videos/video_list.html" afterPath="$PROJECT_DIR$/src/templates/videos/video_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -75,11 +75,21 @@
               <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/videos/models.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.32692307" vertical-offset="873" max-vertical-offset="2565">
-                      <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+                    <state vertical-scroll-proportion="0.27884614" vertical-offset="33" max-vertical-offset="2580">
+                      <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
                       <folding>
                         <element signature="e#0#81#0" expanded="true" />
                       </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/videos/utils.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+                      <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -134,10 +144,10 @@
         <splitter split-orientation="horizontal" split-proportion="0.5">
           <split-first>
             <leaf>
-              <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+              <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/comments/views.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.27361563" vertical-offset="966" max-vertical-offset="1365">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="1365">
                       <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
                       <folding>
                         <element signature="e#0#35#0" expanded="true" />
@@ -158,6 +168,16 @@
                   </provider>
                 </entry>
               </file>
+              <file leaf-file-name="video_detail.html" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/templates/videos/video_detail.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="-0.21908127" vertical-offset="1022" max-vertical-offset="1905">
+                      <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
             </leaf>
           </split-first>
           <split-second>
@@ -165,8 +185,8 @@
               <file leaf-file-name="all.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/templates/notifications/all.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225">
-                      <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+                    <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+                      <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
                       <folding />
                     </state>
                   </provider>
@@ -197,8 +217,8 @@
               <file leaf-file-name="video_list.html" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/templates/videos/video_list.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.26501766" vertical-offset="0" max-vertical-offset="300">
-                      <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+                    <state vertical-scroll-proportion="0.41696113" vertical-offset="32" max-vertical-offset="315">
+                      <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -217,7 +237,7 @@
               <file leaf-file-name="category_list.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/templates/videos/category_list.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="255">
                       <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
                       <folding />
                     </state>
@@ -258,7 +278,6 @@
         <option value="$PROJECT_DIR$/src/templates/comments/comment_thread.html" />
         <option value="$PROJECT_DIR$/src/notifications/admin.py" />
         <option value="$PROJECT_DIR$/src/videos/views.py" />
-        <option value="$PROJECT_DIR$/src/templates/videos/video_detail.html" />
         <option value="$PROJECT_DIR$/src/accounts/models.py" />
         <option value="$PROJECT_DIR$/src/templates/notifications/all.html" />
         <option value="$PROJECT_DIR$/src/templates/base.html" />
@@ -271,8 +290,10 @@
         <option value="$PROJECT_DIR$/src/templates/videos/category_list.html" />
         <option value="$PROJECT_DIR$/src/CMS/urls.py" />
         <option value="$PROJECT_DIR$/src/CMS/settings.py" />
-        <option value="$PROJECT_DIR$/src/templates/videos/video_list.html" />
         <option value="$PROJECT_DIR$/src/videos/admin.py" />
+        <option value="$PROJECT_DIR$/src/templates/videos/video_detail.html" />
+        <option value="$PROJECT_DIR$/src/templates/videos/video_list.html" />
+        <option value="$PROJECT_DIR$/src/videos/utils.py" />
         <option value="$PROJECT_DIR$/src/videos/models.py" />
       </list>
     </option>
@@ -305,7 +326,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,6 +378,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,7 +533,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36163983" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -526,13 +547,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -558,21 +579,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="660">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/settings.py">
@@ -604,13 +618,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/settings.py">
@@ -642,13 +656,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/settings.py">
@@ -659,13 +673,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/settings.py">
@@ -683,13 +697,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7160804" vertical-offset="0" max-vertical-offset="398">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/videos/forms.py">
@@ -804,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/videos/video_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4791155" vertical-offset="480" max-vertical-offset="1785">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03731343" vertical-offset="0" max-vertical-offset="1245">
@@ -853,14 +860,6 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/notifications/all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +917,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/videos/category_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="255">
           <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding />
         </state>
@@ -926,19 +925,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/comments/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27361563" vertical-offset="966" max-vertical-offset="1365">
+        <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="1365">
           <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/videos/video_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26501766" vertical-offset="0" max-vertical-offset="300">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,10 +941,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/notifications/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/videos/video_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41696113" vertical-offset="32" max-vertical-offset="315">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/videos/video_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21908127" vertical-offset="1022" max-vertical-offset="1905">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/videos/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/videos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32692307" vertical-offset="873" max-vertical-offset="2565">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.27884614" vertical-offset="33" max-vertical-offset="2580">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
             <element signature="e#0#81#0" expanded="true" />
           </folding>

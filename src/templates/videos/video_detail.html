@@ -70,6 +70,14 @@
 <i class="fa fa-linkedin-square fa-3x"></i>
 </a>
 
+{% if obj.get_previous_url %}
+<a href="{{ obj.get_previous_url }}">Previous</a>
+{% endif %}
+
+{% if obj.get_next_url %}
+<a href="{{ obj.get_next_url }}">Next</a>
+{% endif %}
+
 <br/>
 <hr/>
 <div class="row">

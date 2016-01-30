@@ -6,6 +6,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.utils.text import slugify
 import urllib2
+from .utils import get_vid_for_direction
 
 # Create your models here.
 
@@ -64,15 +65,15 @@ class Video(models.Model):
         return urllib2.quote("%s%s"%(self.share_message, full_url))
 
     def get_next_url(self):
-        current_category = self.category
-        videos = current_category.videos_set.all().filter(order__gt=self.order)
-        next_vid = None
-        if len(videos) >= 1:
-            try:
-                next_vid = videos[0].get_absolute_url()
-            except IndexError:
-                next_vid = None
-        return next_vid
+        video = get_vid_for_direction(self, "next")
+        if video is not None:
+            return video.get_absolute_url()
+        return None
+    def get_previous_url(self):
+        video = get_vid_for_direction(self, "previous")
+        if video is not None:
+            return video.get_absolute_url()
+        return None
 
 
 
