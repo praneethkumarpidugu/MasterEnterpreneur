@@ -28,7 +28,9 @@ urlpatterns += patterns(
     'accounts.views',
     url(r'^login/$', 'auth_login', name='login'),
     url(r'^logout/$', 'auth_logout', name='logout'),
-
+    url(r'^register/$', 'auth_register', name='register'),
+    #If you wanted to have just paid users remove the above auth_register
+    #currently we have free and paid users
 )
 
 #comment thread

@@ -4,7 +4,8 @@ from django.utils.safestring import mark_safe
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-from .forms import LoginForm
+from .forms import LoginForm, RegisterForm
+from .models import MyUser
 
 def auth_login(request):
     form = LoginForm(request.POST or None)
@@ -27,3 +28,22 @@ def auth_login(request):
 def auth_logout(request):
     logout(request)
     return HttpResponseRedirect('/')
+
+def auth_register(request):
+    form = RegisterForm(request.POST or None)
+    if form.is_valid():
+        username = form.cleaned_data['username']
+        email = form.cleaned_data['email']
+        password = form.cleaned_data['password2']
+        # MyUser.objects.create_user(username=username, email=email, password=password)
+        new_user = MyUser()
+        new_user.username = username
+        new_user.email = email
+        new_user.set_password(password)
+        new_user.save()
+    context = {
+            "form" : form,
+            "action_value" : "",
+            "submit_btn_value": "Register",
+        }
+    return render(request, "accounts/register_form.html", context)
