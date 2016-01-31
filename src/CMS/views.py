@@ -5,12 +5,16 @@ from django.contrib.auth.decorators import login_required
 from accounts.forms import RegisterForm, LoginForm
 from accounts.models import MyUser
 from videos.models import Video
-
+from analytics.signals import page_view
 
 
 #@login_required(login_url='/enroll/login/')
 # @login_required
 def home(request):
+    page_view.send(
+        request.user,
+        page_path=request.get_full_path(),
+    )
     if request.user.is_authenticated():
         context = {}
     else:
