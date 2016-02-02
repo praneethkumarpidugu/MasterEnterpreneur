@@ -77,6 +77,7 @@ LOGIN_URL = '/login/'
 
 AUTH_USER_MODEL = 'accounts.MyUser'
 
+RECENT_COMMENT_NUMBER = 10
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

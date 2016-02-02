@@ -1,12 +1,22 @@
 from accounts.models import MyUser
+from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.db import models
+from django.template.defaultfilters import truncatechars
+from django.utils.text import Truncator
 from videos.models import Video
 # Create your models here.
 
 class CommentManager(models.Manager):
     def all(self):
         return super(CommentManager, self).filter(active=True).filter(parent=None)
+
+    def recent(self):
+        try:
+            limit_to = settings.RECENT_COMMENT_NUMBER
+        except:
+            limit_to = 6
+        return self.get_queryset().filter(active=True).filter(parent=None)[:limit_to]#most recent comments
 
     def create_comment(self, user=None, text=None, path=None, video=None, parent=None):
         if not path:
@@ -53,6 +63,10 @@ class Comment(models.Model):
     def get_origin(self):
         return self.path
 
+    @property
+    def get_preview(self):
+        # return truncatechars(self.text, 120) #max number of characters
+        return Truncator(self.text).chars(120)
     @property
     def get_comment(self):
         return self.text

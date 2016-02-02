@@ -4,6 +4,7 @@ from django.utils.safestring import mark_safe
 from django.contrib.auth.decorators import login_required
 from accounts.forms import RegisterForm, LoginForm
 from accounts.models import MyUser
+from comments.models import Comment
 from videos.models import Video
 from analytics.signals import page_view
 
@@ -16,17 +17,23 @@ def home(request):
         page_path=request.get_full_path(),
     )
     if request.user.is_authenticated():
-        page_view_objs = request.user.pageview_set.get_videos()
+        page_view_objs = request.user.pageview_set.get_videos()[:6]#number of recent videos
         recent_videos = []
         for obj in page_view_objs:
             if not obj.primary_object in recent_videos:
                 recent_videos.append(obj.primary_object)
-        context = {"recent_videos": recent_videos}
+        recent_comments = Comment.objects.recent()
+        context = {
+                    "recent_videos": recent_videos,
+                    "recent_comments": recent_comments,
+                   }
+        template = "home_logged_in.html"
     else:
         login_form = LoginForm()
         register_form = RegisterForm()
+        template = "home_visitor.html"
         context = {"register_form": register_form, "login_form": login_form}
-    return render(request, "home.html", context)
+    return render(request, template , context)
         #return render_to_response("home.html", context, context_instance=RequestContext(request))
 
 
