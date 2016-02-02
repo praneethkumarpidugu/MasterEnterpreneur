@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a8b14553-1bf0-4314-8b75-b448421457b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/home.html" afterPath="$PROJECT_DIR$/src/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analytics/models.py" afterPath="$PROJECT_DIR$/src/analytics/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/analytics/signals.py" afterPath="$PROJECT_DIR$/src/analytics/signals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/videos/views.py" afterPath="$PROJECT_DIR$/src/videos/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CMS/views.py" afterPath="$PROJECT_DIR$/src/CMS/views.py" />
     </list>
     <ignored path="MasterEnterpreneur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +33,11 @@
         <splitter split-orientation="horizontal" split-proportion="0.5154885">
           <split-first>
             <leaf>
-              <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+              <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/videos/models.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2625">
-                      <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+                    <state vertical-scroll-proportion="0.81072557" vertical-offset="148" max-vertical-offset="2625">
+                      <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
                       <folding>
                         <element signature="e#0#81#0" expanded="true" />
                       </folding>
@@ -76,11 +75,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+              <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/videos/views.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.85804415" vertical-offset="418" max-vertical-offset="825">
-                      <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="825">
+                      <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
                       <folding>
                         <element signature="e#0#44#0" expanded="true" />
                       </folding>
@@ -95,7 +94,7 @@
               <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="1740">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="1136" max-vertical-offset="1740">
                       <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
                       <folding>
                         <element signature="e#27#99#0" expanded="true" />
@@ -119,8 +118,8 @@
               <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/CMS/views.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.7097792" vertical-offset="0" max-vertical-offset="990">
-                      <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+                    <state vertical-scroll-proportion="0.8391167" vertical-offset="49" max-vertical-offset="1065">
+                      <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
                       <folding>
                         <element signature="e#0#59#0" expanded="true" />
                       </folding>
@@ -160,10 +159,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+              <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/notifications/models.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.397351" vertical-offset="585" max-vertical-offset="2670">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2670">
                       <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
                       <folding>
                         <element signature="e#0#32#0" expanded="true" />
@@ -194,6 +193,16 @@
                   </provider>
                 </entry>
               </file>
+              <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/templates/home.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.6223022" vertical-offset="772" max-vertical-offset="1125">
+                      <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
             </leaf>
           </split-first>
           <split-second>
@@ -201,8 +210,8 @@
               <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/analytics/models.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.6523179" vertical-offset="403" max-vertical-offset="780">
-                      <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+                    <state vertical-scroll-proportion="0.794702" vertical-offset="405" max-vertical-offset="1110">
+                      <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
                       <folding>
                         <element signature="e#0#32#0" expanded="true" />
                       </folding>
@@ -274,17 +283,17 @@
         <option value="$PROJECT_DIR$/src/templates/form.html" />
         <option value="$PROJECT_DIR$/src/templates/accounts/register_form.html" />
         <option value="$PROJECT_DIR$/src/templates/base.html" />
-        <option value="$PROJECT_DIR$/src/templates/home.html" />
         <option value="$PROJECT_DIR$/src/accounts/views.py" />
         <option value="$PROJECT_DIR$/src/templates/navbar.html" />
         <option value="$PROJECT_DIR$/src/templates/videos/video_list.html" />
         <option value="$PROJECT_DIR$/src/videos/models.py" />
         <option value="$PROJECT_DIR$/src/CMS/settings.py" />
-        <option value="$PROJECT_DIR$/src/CMS/views.py" />
         <option value="$PROJECT_DIR$/src/analytics/admin.py" />
         <option value="$PROJECT_DIR$/src/analytics/signals.py" />
         <option value="$PROJECT_DIR$/src/videos/views.py" />
+        <option value="$PROJECT_DIR$/src/CMS/views.py" />
         <option value="$PROJECT_DIR$/src/analytics/models.py" />
+        <option value="$PROJECT_DIR$/src/templates/home.html" />
       </list>
     </option>
   </component>
@@ -316,7 +325,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,12 +371,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="analytics" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -831,33 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="975">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="1740">
-          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
-          <folding>
-            <element signature="e#27#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/videos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2625">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/videos/video_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="690">
@@ -918,21 +900,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7097792" vertical-offset="0" max-vertical-offset="990">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/analytics/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notifications/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2670">
+          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/videos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="825">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/videos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81072557" vertical-offset="148" max-vertical-offset="2625">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1136" max-vertical-offset="1740">
+          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <folding>
+            <element signature="e#27#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -944,33 +956,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/notifications/models.py">
+    <entry file="file://$PROJECT_DIR$/src/CMS/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.397351" vertical-offset="585" max-vertical-offset="2670">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.8391167" vertical-offset="49" max-vertical-offset="1065">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/videos/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85804415" vertical-offset="418" max-vertical-offset="825">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/analytics/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6523179" vertical-offset="403" max-vertical-offset="780">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.794702" vertical-offset="405" max-vertical-offset="1110">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6223022" vertical-offset="772" max-vertical-offset="1125">
+          <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
