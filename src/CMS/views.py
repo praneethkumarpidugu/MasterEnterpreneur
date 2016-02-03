@@ -2,11 +2,16 @@ from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, HttpResponseRedirect, redirect
 from django.utils.safestring import mark_safe
 from django.contrib.auth.decorators import login_required
+from django.contrib.contenttypes.models import ContentType
+from django.db.models import Count
 from accounts.forms import RegisterForm, LoginForm
 from accounts.models import MyUser
+from analytics.signals import page_view
+from analytics.models import PageView
 from comments.models import Comment
 from videos.models import Video
-from analytics.signals import page_view
+
+
 
 
 #@login_required(login_url='/enroll/login/')
@@ -23,9 +28,24 @@ def home(request):
             if not obj.primary_object in recent_videos:
                 recent_videos.append(obj.primary_object)
         recent_comments = Comment.objects.recent()
+        #Top items
+        video_type = ContentType.objects.get_for_model(Video)
+        popular_videos_list = PageView.objects.filter(primary_content_type=video_type).values("primary_object_id").annotate(the_count=Count("primary_object_id")).order_by("-the_count")[:4]
+        popular_videos = []
+        for item in popular_videos_list:
+            try:
+                new_video = Video.objects.get(id=item['primary_object_id'])
+                popular_videos.append(new_video)
+            except:
+                pass
+        print popular_videos
+        #One-item
+        # PageView.objects.filter(primary_content_type=video_type, primary_object_id=7).count()
+
         context = {
                     "recent_videos": recent_videos,
                     "recent_comments": recent_comments,
+                    "popular_videos": popular_videos,
                    }
         template = "home_logged_in.html"
     else:

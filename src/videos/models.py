@@ -30,6 +30,19 @@ class VideoManager(models.Manager):
 
 DEFAULT_MESSAGE = "check out this video."
 
+# from analytics.models import PageView
+# from videos.models import Video
+# from django.db.models import Count
+# from django.contrib.contenttypes.models import ContentType
+
+#Top items
+# PageView.objects.filter(primary_content_type=video_type).values("primary_object_id").annotate(the_count=Count("primary_object_id")).order_by("-the_count")
+
+#One-item
+#PageView.objects.filter(primary_content_type=video_type, primary_object_id=7).count()
+
+
+
 class Video(models.Model):
     title = models.CharField(max_length=120)
     embed_code = models.CharField(max_length=500, null=True, blank=True)
