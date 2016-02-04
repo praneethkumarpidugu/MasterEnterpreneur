@@ -38,7 +38,7 @@ def home(request):
                 popular_videos.append(new_video)
             except:
                 pass
-        print popular_videos
+
         #One-item
         # PageView.objects.filter(primary_content_type=video_type, primary_object_id=7).count()
 

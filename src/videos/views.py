@@ -18,7 +18,7 @@ def video_detail(request, cat_slug, vid_slug):
                    page_path=request.get_full_path(),
                    primary_obj=obj,
                    secondary_obj=cat)
-    if request.user.is_authenticated() or obj.has_preview:
+    if request.user.is_member or obj.has_preview:
         comments = obj.comment_set.all()
         for c in comments:
             c.get_children()

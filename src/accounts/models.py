@@ -1,7 +1,9 @@
 # Create your models here.
+from django.contrib.auth.signals import user_logged_in
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 from django.db import models
 from django.db.models.signals import post_save
+from django.utils import timezone
 
 from notifications.signals import notify
 
@@ -87,6 +89,34 @@ class MyUser(AbstractBaseUser):
         return self.is_admin
 
 
+class Membership(models.Model):
+    user = models.OneToOneField(MyUser)
+    date_end = models.DateTimeField(default=timezone.now(), verbose_name='End Date')
+    date_start = models.DateTimeField(default=timezone.now(), verbose_name='Start Date')
+
+    def __unicode__(self):
+        return str(self.user.username)
+
+    def update_status(self):
+        if self.date_end >= timezone.now():
+            self.user.is_member = True
+            self.user.save()
+        elif self.date_end < timezone.now():
+            self.user.is_member = False
+            self.user.save()
+        else:
+            pass
+
+def user_logged_in_signal(sender, signal,  request, user, **kwargs):
+    request.session.set_expiry(60000)
+    membership_obj, created = Membership.objects.get_or_create(user=user)
+    if created:
+        membership_obj.date_start = timezone.now()
+        membership_obj.save()
+        user.is_member = True
+        user.save()
+    user.membership.update_status()
+user_logged_in.connect(user_logged_in_signal)
 
 class UserProfile(models.Model):
     user = models.OneToOneField(MyUser)
