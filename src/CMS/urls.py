@@ -23,6 +23,11 @@ if settings.DEBUG:
     urlpatterns += patterns('',) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += patterns('',) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+
+urlpatterns += patterns('billing.views',
+    url(r'^upgrade/$', 'upgrade', name='account_upgrade'),
+)
+
 #auth login/logout
 urlpatterns += patterns(
     'accounts.views',

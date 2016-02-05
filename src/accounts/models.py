@@ -4,6 +4,7 @@ from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils import timezone
+from billing.models import Membership
 
 from notifications.signals import notify
 
@@ -88,24 +89,6 @@ class MyUser(AbstractBaseUser):
         # Simplest possible answer: All admins are staff
         return self.is_admin
 
-
-class Membership(models.Model):
-    user = models.OneToOneField(MyUser)
-    date_end = models.DateTimeField(default=timezone.now(), verbose_name='End Date')
-    date_start = models.DateTimeField(default=timezone.now(), verbose_name='Start Date')
-
-    def __unicode__(self):
-        return str(self.user.username)
-
-    def update_status(self):
-        if self.date_end >= timezone.now():
-            self.user.is_member = True
-            self.user.save()
-        elif self.date_end < timezone.now():
-            self.user.is_member = False
-            self.user.save()
-        else:
-            pass
 
 def user_logged_in_signal(sender, signal,  request, user, **kwargs):
     request.session.set_expiry(60000)

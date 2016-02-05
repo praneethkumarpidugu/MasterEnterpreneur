@@ -18,15 +18,24 @@ def video_detail(request, cat_slug, vid_slug):
                    page_path=request.get_full_path(),
                    primary_obj=obj,
                    secondary_obj=cat)
-    if request.user.is_member or obj.has_preview:
-        comments = obj.comment_set.all()
-        for c in comments:
-            c.get_children()
-        comment_form = CommentForm()
-        context = {"obj": obj,
-                   "comments": comments,
-                   "comment_form": comment_form }
-        return render(request, "videos/video_detail.html", context)
+    if request.user.is_authenticated() or obj.has_preview:
+        try:
+            is_member = request.user.is_member()
+        except:
+            is_member = None
+        if is_member:
+            comments = obj.comment_set.all()
+            for c in comments:
+                c.get_children()
+            comment_form = CommentForm()
+            context = {"obj": obj,
+                       "comments": comments,
+                       "comment_form": comment_form }
+            return render(request, "videos/video_detail.html", context)
+        else:
+            #Upgrade Account
+            next_url = obj.get_absolute_url()
+            return HttpResponseRedirect("%s?next=%s" % (reverse('account_upgrade'), next_url))
     else:
         next_url = obj.get_absolute_url()
         return HttpResponseRedirect("%s?next=%s" % (reverse('login'), next_url))

@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'crispy_forms',
     'accounts',
     'analytics',
+    'billing',
     'comments',
     'notifications',
     'videos',
