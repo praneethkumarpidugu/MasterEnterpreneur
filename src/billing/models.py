@@ -38,7 +38,7 @@ class TransactionManager(models.Manager):
         if not transaction_id:
             raise ValueError("Must complete a transaction to add new.")
 
-        new_order_id = "%s%s%s" % (transaction_id[:2], random.randint(1, 9), transaction_id[2:])
+        new_order_id = "%s%s%s" % (transaction_id[:2], random.randint(1, 23423), transaction_id[2:])
         new_trans = self.model(
             user=user,
             transaction_id=transaction_id,
@@ -71,6 +71,10 @@ class Transaction(models.Model):
 
     def __unicode__(self):
         return self.order_id
+
+    #Dont forget if you make any changes makemigrations even for Meta
+    class Meta:
+        ordering = ['-timestamp']
 
 
 
