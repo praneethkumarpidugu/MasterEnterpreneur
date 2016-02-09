@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.conf import settings
 from django.shortcuts import render, redirect
 from .models import Membership,Transaction,UserMerchantId
 from .signals import membership_dates_update
@@ -8,9 +9,9 @@ import random
 import braintree
 
 braintree.Configuration.configure(braintree.Environment.Sandbox,
-                                  merchant_id="85rcwqpqqj3hbn98",
-                                  public_key="j5d5khw4qp3j6jpg",
-                                  private_key="a8dde433bb2920067b3dccb5abb82274")
+                                  merchant_id=settings.BRAINTREE_MERCHANT_ID,
+                                  public_key=settings.BRAINTREE_PUBLIC_KEY,
+                                  private_key=settings.BRAINTREE_PRIVATE_KEY)
 
 PLAN_ID = "monthly_plan"
 
@@ -22,24 +23,9 @@ def upgrade(request):
     client_token = braintree.ClientToken.generate()
     if request.user.is_authenticated():
         try:
-            #something to get the current customer id stored somewhere
             merchant_obj = UserMerchantId.objects.get(user=request.user)
-        except UserMerchantId.DoesNotExist:
-            new_customer_result = braintree.Customer.create({})
-            if new_customer_result.is_success:
-                merchant_obj, created = UserMerchantId.objects.get_or_create(user=request.user)
-                merchant_obj.customer_id = new_customer_result.customer.id
-                merchant_obj.save()
-                print """Customer created with id = {0}""".format(new_customer_result.customer.id)
-            else:
-                print "Error: {0}".format(new_customer_result.message)
-                messages.error(request, "There was an error with your account. Please contact us.")
-                #redirect somewhere
-                return redirect("contact_us")
         except:
-            messages.error(request, "There was an error with the server. Please try again or contact us if the problem persists.")
-            #some error
-            #redirect somewhere
+            messages.error(request, "There was an error with your account. Please contact us.")
             return redirect("contact_us")
         merchant_customer_id = merchant_obj.customer_id
         if request.method == "POST":

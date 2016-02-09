@@ -122,3 +122,7 @@ TEMPLATE_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
+
+BRAINTREE_MERCHANT_ID = "85rcwqpqqj3hbn98"
+BRAINTREE_PUBLIC_KEY = "j5d5khw4qp3j6jpg"
+BRAINTREE_PRIVATE_KEY = "a8dde433bb2920067b3dccb5abb82274"
