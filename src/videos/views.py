@@ -35,10 +35,10 @@ def video_detail(request, cat_slug, vid_slug):
         else:
             #Upgrade Account
             next_url = obj.get_absolute_url()
-            return HttpResponseRedirect("%s?next=%s" % (reverse('account_upgrade'), next_url))
+            return HttpResponseRedirect("%s?next=%s"%(reverse('account_upgrade'), next_url))
     else:
         next_url = obj.get_absolute_url()
-        return HttpResponseRedirect("%s?next=%s" % (reverse('login'), next_url))
+        return HttpResponseRedirect("%s?next=%s"%(reverse('login'), next_url))
 
 def category_list(request):
     queryset = Category.objects.all()
