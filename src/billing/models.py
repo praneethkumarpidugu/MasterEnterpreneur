@@ -1,15 +1,18 @@
 import datetime
 import random
 from django.conf import settings
+from django.contrib.auth.signals import user_logged_in
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils import timezone
 
 from .signals import membership_dates_update
+from .utils import check_membership_status, update_braintree_membership
 
+def user_logged_in_receiver(sender, user, **kwargs):
+    update_braintree_membership(user)
 
-
-
+user_logged_in.connect(user_logged_in_receiver)
 
 # Create your models here.
 class Membership(models.Model):
