@@ -9,7 +9,7 @@ from accounts.models import MyUser
 from analytics.signals import page_view
 from analytics.models import PageView
 from comments.models import Comment
-from videos.models import Video
+from videos.models import Video, Category
 
 
 
@@ -49,10 +49,17 @@ def home(request):
                    }
         template = "home_logged_in.html"
     else:
+        featured_categories = Category.objects.get_featured()
+        featured_videos = Video.objects.get_featured()
         login_form = LoginForm()
         register_form = RegisterForm()
         template = "home_visitor.html"
-        context = {"register_form": register_form, "login_form": login_form}
+        context = {
+            "register_form": register_form,
+            "login_form": login_form,
+            "featured_videos":featured_videos,
+            "featured_categories": featured_categories,
+        }
     return render(request, template , context)
         #return render_to_response("home.html", context, context_instance=RequestContext(request))
 
