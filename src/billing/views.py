@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.shortcuts import render, redirect, Http404
 from django.utils import timezone
@@ -16,7 +17,7 @@ braintree.Configuration.configure(braintree.Environment.Sandbox,
 
 PLAN_ID = "monthly_plan"
 
-def get_or_create_model_transactions(user, braintree_transaction):
+def get_or_create_model_transaction(user, braintree_transaction):
     trans_id = braintree_transaction.id
     try:
         trans = Transaction.objects.get(user=user, transaction_id=trans_id)
@@ -68,9 +69,8 @@ def billing_history(request):
         return render(request, "billing/history.html", {"queryset": history})
     else:
         raise Http404
-
+@login_required
 def upgrade(request):
-
     if request.user.is_authenticated():
         try:
             merchant_obj = UserMerchantId.objects.get(user=request.user)
@@ -136,7 +136,7 @@ def upgrade(request):
                     merchant_obj.plan_id = PLAN_ID
                     merchant_obj.save()
                     bt_tran = create_sub.subscription.transactions[0]
-                    new_tran, created = get_or_create_model_transactions(request.user, bt_tran)
+                    new_tran, created = get_or_create_model_transaction(request.user, bt_tran)
                     trans_success = False
                     trans_timestamp = None
                     if created:
@@ -150,6 +150,6 @@ def upgrade(request):
                     messages.error(request, "An error occured, please try again")
                     return redirect("account_upgrade")
 
-    context = {"client_token": client_token}
-    return render(request, "billing/upgrade.html", context)
+        context = {"client_token": client_token}
+        return render(request, "billing/upgrade.html", context)
 

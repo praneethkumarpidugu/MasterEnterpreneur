@@ -23,7 +23,7 @@ def video_detail(request, cat_slug, vid_slug):
             is_member = request.user.is_member()
         except:
             is_member = None
-        if is_member:
+        if is_member or obj.has_preview:
             comments = obj.comment_set.all()
             for c in comments:
                 c.get_children()
@@ -53,6 +53,6 @@ def category_detail(request, cat_slug):
     queryset = obj.video_set.all()
     page_view.send(request.user,
                    page_path=request.get_full_path(),
-                   primary_obj=obj )
+                   primary_obj=obj)
     print queryset
     return render(request, "videos/video_list.html", {"obj": obj, "queryset": queryset})
