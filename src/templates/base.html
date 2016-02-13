@@ -25,9 +25,44 @@
       body{
         min-height : 2000px;
       }
-      .navbar-static-top {
-        margin-bottom : 19 px;
+
+      .navbar-default{
+        margin-bottom:0px;
       }
+      .container-fluid{
+        padding-left:0px;
+        padding-right:0px;
+      }
+
+      .container-fluid .jumbotron {
+        border-radius: 0px;
+      }
+        /*.navbar-static-top {
+        margin-bottom : 19 px;
+      }*/
+
+      .navbar-default {
+        background-color: #69D47C;
+        border-color: #69D47C;
+        background-image: url("http://www.transparenttextures.com/patterns/batthern.png");
+      }
+
+      .navbar-default .navbar-nav>li>a {
+        color: #FFFFFF;
+      }
+
+      .navbar-default .navbar-nav>li>a:hover {
+        color: #0C0E0C;
+      }
+
+     .navbar-default .navbar-brand {
+        color: #F7F3F3;
+      }
+
+     .navbar-default .navbar-brand:hover {
+        color: #0C0E0C;
+      }
+
       {% block style %}
 
       {% endblock %}
