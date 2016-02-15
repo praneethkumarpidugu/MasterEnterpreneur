@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a8b14553-1bf0-4314-8b75-b448421457b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/home_visitor.html" afterPath="$PROJECT_DIR$/src/templates/home_visitor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/javascript.html" afterPath="$PROJECT_DIR$/src/templates/javascript.html" />
     </list>
     <ignored path="MasterEnterpreneur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +63,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home_visitor.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="home_visitor.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/home_visitor.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5379147" vertical-offset="3193" max-vertical-offset="3705">
-                  <caret line="228" column="10" selection-start-line="228" selection-start-column="10" selection-end-line="228" selection-end-column="10" />
+                <state vertical-scroll-proportion="-11.208333" vertical-offset="3076" max-vertical-offset="3705">
+                  <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="javascript.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/templates/javascript.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.28616852" vertical-offset="0" max-vertical-offset="629">
+                  <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -123,7 +132,7 @@
           <file leaf-file-name="video_list.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/videos/video_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5663507" vertical-offset="46" max-vertical-offset="750">
+                <state vertical-scroll-proportion="0.3799682" vertical-offset="46" max-vertical-offset="750">
                   <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
                   <folding />
                 </state>
@@ -175,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/templates/billing/history.html" />
         <option value="$PROJECT_DIR$/src/billing/signals.py" />
         <option value="$PROJECT_DIR$/src/billing/admin.py" />
-        <option value="$PROJECT_DIR$/src/templates/javascript.html" />
         <option value="$PROJECT_DIR$/src/CMS/urls.py" />
         <option value="$PROJECT_DIR$/src/templates/billing/upgrade.html" />
         <option value="$PROJECT_DIR$/src/notifications/models.py" />
@@ -191,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/templates/footer.html" />
         <option value="$PROJECT_DIR$/src/templates/base.html" />
         <option value="$PROJECT_DIR$/src/templates/home_visitor.html" />
+        <option value="$PROJECT_DIR$/src/templates/javascript.html" />
       </list>
     </option>
   </component>
@@ -432,7 +441,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30396476" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30396476" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -660,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/javascript.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
-          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1606" max-vertical-offset="1995">
@@ -842,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/videos/video_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5663507" vertical-offset="46" max-vertical-offset="750">
+        <state vertical-scroll-proportion="0.3799682" vertical-offset="46" max-vertical-offset="750">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding />
         </state>
@@ -866,8 +868,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/home_visitor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5379147" vertical-offset="3193" max-vertical-offset="3705">
-          <caret line="228" column="10" selection-start-line="228" selection-start-column="10" selection-end-line="228" selection-end-column="10" />
+        <state vertical-scroll-proportion="-11.208333" vertical-offset="3076" max-vertical-offset="3705">
+          <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/javascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28616852" vertical-offset="0" max-vertical-offset="629">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
