@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, Http404, HttpResponseRedirect
+from django.shortcuts import render, Http404, HttpResponseRedirect, get_object_or_404
 
 # Create your views here.
 from notifications.signals import notify
@@ -10,7 +10,7 @@ from .forms import CommentForm
 
 @login_required
 def comment_thread(request, id):
-    comment = Comment.objects.get(id=id)
+    comment = get_object_or_404(Comment, id=id)
     form = CommentForm()
     context = {
         "form": form,
