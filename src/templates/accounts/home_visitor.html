@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block title %}Welcome |{% endblock %}
 
 <style>
@@ -76,11 +76,11 @@
 <div class="jumbotron">
     <div class="container">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-7">
             <h1>Welcome</h1>
-            <p>Our Site offers Master Entrepreneur Coaching Programs.</p>
+            <p class="lead-jumbotron">Our Site offers Master Entrepreneur Coaching Programs.</p>
         </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
             <div role="tabpanel">
 
           <!-- Nav tabs -->
@@ -95,7 +95,7 @@
                 <div class="panel panel-jumbotron panel-default">
                   <div class="panel-body">
                     <form method="POST" action="{% url 'register' %}">{% csrf_token %}
-                    {{ register_form.as_p }}
+                    {{ register_form|crispy }}
                     <input class="btn btn-default btn-block btn-lg" type="submit" value="Register" />
                     </form>
                       <br/>
@@ -107,7 +107,7 @@
             <div role="tabpanel" class="tab-pane" id="login">
                 <div class="panel panel-jumbotron panel-default">
                 <form method="POST" action="{% url 'login' %}">{% csrf_token %}
-                    {{ login_form.as_p }}
+                    {{ login_form|crispy }}
                     <input class="btn btn-default btn-block" type="submit" value="Login" />
                 </form>
                 </div>

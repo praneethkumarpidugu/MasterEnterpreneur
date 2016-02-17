@@ -1,3 +1,4 @@
+from itertools import chain
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, Http404, HttpResponseRedirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
@@ -40,10 +41,13 @@ def video_detail(request, cat_slug, vid_slug):
         next_url = obj.get_absolute_url()
         return HttpResponseRedirect("%s?next=%s"%(reverse('login'), next_url))
 
+
 def category_list(request):
     queryset = Category.objects.all()
+    queryset2 = Category.objects.all()
+    queryset3 = list(chain(queryset, queryset2))
     context = {
-        "queryset" : queryset,
+        "queryset" : queryset3,
     }
     return render(request,"videos/category_list.html", context)
 

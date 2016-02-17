@@ -39,21 +39,23 @@ def home(request):
             except:
                 pass
 
+        random_videos = Video.objects.all().order_by('?')[:6]
         #One-item
         # PageView.objects.filter(primary_content_type=video_type, primary_object_id=7).count()
 
         context = {
+                    "random_videos": random_videos,
                     "recent_videos": recent_videos,
                     "recent_comments": recent_comments,
                     "popular_videos": popular_videos,
                    }
-        template = "home_logged_in.html"
+        template = "accounts/home_logged_in.html"
     else:
         featured_categories = Category.objects.get_featured()
         featured_videos = Video.objects.get_featured()
         login_form = LoginForm()
         register_form = RegisterForm()
-        template = "home_visitor.html"
+        template = "accounts/home_visitor.html"
         context = {
             "register_form": register_form,
             "login_form": login_form,
