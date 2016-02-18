@@ -85,6 +85,11 @@ class TransactionManager(models.Manager):
         new_trans.save(using=self._db)
         return new_trans
 
+    def all_for_user(self, user):
+        return super(TransactionManager, self).filter(user=user)
+    def get_recent_for_user(self, user, num):
+        return super(TransactionManager, self).filter(user=user)[:num]
+
 
 class Transaction(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
