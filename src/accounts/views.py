@@ -8,6 +8,10 @@ from django.core.urlresolvers import reverse
 from .forms import LoginForm, RegisterForm
 from .models import MyUser
 
+@login_required
+def account_home(request):
+    return render(request, "accounts/account_home.html", {})
+
 def auth_login(request):
     form = LoginForm(request.POST or None)
     next_url = request.GET.get('next')
