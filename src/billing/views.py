@@ -28,13 +28,13 @@ def get_or_create_model_transaction(user, braintree_transaction):
         amount = braintree_transaction.amount
 
         if payment_type == braintree.PaymentInstrumentType.PayPalAccount:
-            trans = Transaction.objects.create_new(user,trans_id,amount, "PayPal")
+            trans = Transaction.objects.create_new(user, trans_id, amount, "PayPal")
 
         elif payment_type == braintree.PaymentInstrumentType.CreditCard:
             credit_card_details = braintree_transaction.credit_card_details
             card_type = credit_card_details.card_type
             last_4 = credit_card_details.last_4
-            trans = Transaction.objects.create_new(user,trans_id,amount, card_type, last_four=last_4)
+            trans = Transaction.objects.create_new(user, trans_id, amount, card_type, last_four=last_4)
 
         else:
             created = False
@@ -56,7 +56,7 @@ def update_transactions(user):
             pass
         else:
             for bt_tran in bt_transactions.items:
-                new_tran, created = get_or_create_model_transactions(user, bt_tran)
+                new_tran, created = get_or_create_model_transaction(user, bt_tran)
 
             # update_saved_transactions()
     # for trans in bt_transactions.items:

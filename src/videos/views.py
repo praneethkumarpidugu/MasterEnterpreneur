@@ -21,7 +21,7 @@ def video_detail(request, cat_slug, vid_slug):
                    secondary_obj=cat)
     if request.user.is_authenticated() or obj.has_preview:
         try:
-            is_member = request.user.is_member()
+            is_member = request.user.is_member
         except:
             is_member = None
         if is_member or obj.has_preview:

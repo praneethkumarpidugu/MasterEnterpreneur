@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -113,7 +113,13 @@ STATICFILES_DIRS = (
     #'/var/www/static/',
 )
 
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
+
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
+
+# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "templates"),
@@ -121,15 +127,15 @@ TEMPLATE_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
-
+# MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static', 'media')
 BRAINTREE_MERCHANT_ID = "85rcwqpqqj3hbn98"
 BRAINTREE_PUBLIC_KEY = "j5d5khw4qp3j6jpg"
 BRAINTREE_PRIVATE_KEY = "a8dde433bb2920067b3dccb5abb82274"
 
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-
-#Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config()
+#
+# #Honor the 'X-Forwarded-Proto' header for request.is_secure()
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']

@@ -31,7 +31,7 @@ class MyUserManager(BaseUserManager):
             raise ValueError('Users must have an email address')
 
         user = self.model(
-            username = username,
+            username=username,
             email=self.normalize_email(email),
         )
 

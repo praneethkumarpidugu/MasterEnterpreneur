@@ -45,7 +45,7 @@ post_save.connect(update_membership_status, sender=Membership)
 def update_membership_dates(sender, new_date_start, **kwargs):
     membership = sender
     current_date_end = membership.date_end
-    if current_date_end > new_date_start:
+    if current_date_end >= new_date_start:
         #append new_start_date plus offset to date end of the instance
         membership.date_end = current_date_end + datetime.timedelta(days=30, hours=10)
         membership.save()
@@ -68,7 +68,7 @@ class TransactionManager(models.Manager):
         if not transaction_id:
             raise ValueError("Must complete a transaction to add new.")
 
-        new_order_id = "%s%s%s" % (transaction_id[:2], random.randint(1, 23423), transaction_id[2:])
+        new_order_id = "%s%s%s" %(transaction_id[:2], random.randint(1, 23423), transaction_id[2:])
         new_trans = self.model(
             user=user,
             transaction_id=transaction_id,
