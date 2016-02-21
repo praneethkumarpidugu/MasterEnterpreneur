@@ -1,10 +1,11 @@
 # MASTER ENTERPRENEUR PROGRAM CONTENT MEMBERSHIP SITE
 
-## Image
+## ![logo](http://res.cloudinary.com/dnwvzsw7s/image/upload/v1456094192/Screen_Shot_2016-02-21_at_5.17.44_pm_gtqhrs.png)
 ## GIF
 
+
 # Site is currently live in the production heroku server
-(https://afternoon-lowlands-85210.herokuapp.com/)[https://afternoon-lowlands-85210.herokuapp.com/]
+[https://afternoon-lowlands-85210.herokuapp.com/](https://afternoon-lowlands-85210.herokuapp.com/)
 
 ```shell
 source bin/activate && cd src && python manage.py runserver

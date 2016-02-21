@@ -2,84 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8b14553-1bf0-4314-8b75-b448421457b0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/Screen_Shot_2016-01-15_at_1.00.03_pm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/course_logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/course_logo2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/course_logo_En1G5jw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/course_logo_cyC1tUr.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/linear_regression.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/media/images/slowbot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/changelists.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/forms.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/css/widgets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/changelist-bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/changelist-bg_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/default-bg-reverse.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/default-bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/deleted-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/gis/move_vertex_off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/gis/move_vertex_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon-no.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon-unknown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon-yes.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_addlink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_alert.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_calendar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_changelink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_clock.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_deletelink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_error.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_searchbox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/icon_success.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/inline-delete-8bit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/inline-delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/inline-restore-8bit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/inline-restore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/inline-splitter-bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/nav-bg-grabber.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/nav-bg-reverse.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/nav-bg-selected.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/nav-bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/selector-icons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/selector-search.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/sorting-icons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/tooltag-add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/img/tooltag-arrowright.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/LICENSE-JQUERY.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/SelectBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/SelectFilter2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/admin/DateTimeShortcuts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/admin/RelatedObjectLookups.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/collapse.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/inlines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/inlines.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/jquery.init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/prepopulate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/prepopulate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/timeparse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CMS/static/static_root/admin/js/urlify.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/accounts/account_home.html" afterPath="$PROJECT_DIR$/src/templates/accounts/account_home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/videos/category_list.html" afterPath="$PROJECT_DIR$/src/templates/videos/category_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/accounts/home_visitor.html" afterPath="$PROJECT_DIR$/src/templates/accounts/home_visitor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CMS/settings.py" afterPath="$PROJECT_DIR$/src/CMS/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/videos/video_list.html" afterPath="$PROJECT_DIR$/src/templates/videos/video_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/accounts/views.py" afterPath="$PROJECT_DIR$/src/accounts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MasterEnterpreneur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +39,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4338843" vertical-offset="0" max-vertical-offset="630">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.12396694" vertical-offset="0" max-vertical-offset="645">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -466,10 +389,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2041116" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2041116" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -946,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4338843" vertical-offset="0" max-vertical-offset="630">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.12396694" vertical-offset="0" max-vertical-offset="645">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
