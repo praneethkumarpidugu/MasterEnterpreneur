@@ -3,6 +3,7 @@ from django.shortcuts import render, HttpResponseRedirect, redirect
 from django.utils.safestring import mark_safe
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
+from django.contrib import messages
 
 # Create your views here.
 from billing.models import Transaction
@@ -65,19 +66,20 @@ def auth_register(request):
         new_user.email = email
         new_user.set_password(password)
         new_user.save()
-    context = {
-            "form" : form,
-            "action_value" : "",
-            "submit_btn_value": "Register",
-        }
-
+        messages.success(request, "Your registration was successful")
     action_url = reverse("register")
-    title = "Login"
+    title = "Register"
     submit_btn = "Create Free Account"
+    submit_btn_class = "btn-success btn-block"
     context = {
         "form" : form,
         "action_url": action_url,
         "title": title,
         "submit_btn": submit_btn,
+        "submit_btn_class": submit_btn_class,
     }
     return render(request, "accounts/account_login_register.html", context)
+#
+# def register_success(request):
+#
+#     return render(request,"" ,{})

@@ -77,8 +77,9 @@
     <div class="container">
     <div class="row">
         <div class="col-sm-7">
-            <h1>Welcome</h1>
-            <p class="lead-jumbotron">Our Site offers Master Entrepreneur Coaching Programs.</p>
+            <h1>Learn to Start <br/> your Own Business<br/>We will Guide you.</h1>
+            <p class="lead-jumbotron">Our Site offers Master Entrepreneur Coaching Programs.<br/>1.Help you through bootcamps<br/>2.We will walk you through business procedures.<br/>3.We will teach right skills to manage risks<br/>4.We will Teach also business models</p>
+            <h2>Want to Know more Join us by Registering</h2>
         </div>
             <div class="col-sm-4">
             <div role="tabpanel">
@@ -96,7 +97,7 @@
                   <div class="panel-body">
                     <form method="POST" action="{% url 'register' %}">{% csrf_token %}
                     {{ register_form|crispy }}
-                    <input class="btn btn-default btn-block btn-lg" type="submit" value="Register" />
+                    <input class="btn btn-default btn-success btn-block btn-lg" type="submit" value="Register" />
                     </form>
                       <br/>
                       <p>By Registering you agree to our<a href="#"> terms</a> </p>
@@ -106,10 +107,12 @@
             </div>
             <div role="tabpanel" class="tab-pane" id="login">
                 <div class="panel panel-jumbotron panel-default">
+                    <div class="panel-body">
                 <form method="POST" action="{% url 'login' %}">{% csrf_token %}
                     {{ login_form|crispy }}
-                    <input class="btn btn-default btn-block" type="submit" value="Login" />
+                    <input class="btn btn-success btn-default btn-block" type="submit" value="Login" />
                 </form>
+                </div>
                 </div>
             </div>
           </div>

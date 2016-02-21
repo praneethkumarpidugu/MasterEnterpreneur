@@ -14,7 +14,7 @@
 <div class="row">
 {% for item in queryset %}
     <div class="col-sm-6">
-<a href="{{ item.get_absolute_url }}">{{ item }}</a><br/>
+<a href="{{ item.get_absolute_url }}"><h3>{{ item }}</h3></a><br/>
 <a href="{{ item.get_absolute_url }}"><img src="{{ item.get_image_url }}" class="img-responsive"/></a><br/>
         </div>
         {% cycle '' '<div class=\'col-sm-12\'><hr/></div>'%}

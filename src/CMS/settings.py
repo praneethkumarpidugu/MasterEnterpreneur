@@ -108,34 +108,46 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#development
 STATICFILES_DIRS = (
     os.path.join(os.path.dirname(BASE_DIR), "static", "static_dirs"),
     #'/var/www/static/',
 )
 
 # STATICFILES_DIRS = (
-#     os.path.join(PROJECT_ROOT, 'static'),
+#     os.path.join(BASE_DIR, 'static'),
 # )
 
+#development(dont forget to removed os.path.dirname since we modified)
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
 
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+#production
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "templates"),
 )
 
 MEDIA_URL = '/media/'
+#development
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
-# MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static', 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+#Production use
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+
 BRAINTREE_MERCHANT_ID = "85rcwqpqqj3hbn98"
 BRAINTREE_PUBLIC_KEY = "j5d5khw4qp3j6jpg"
 BRAINTREE_PRIVATE_KEY = "a8dde433bb2920067b3dccb5abb82274"
 
+#production
 # import dj_database_url
 # DATABASES['default'] = dj_database_url.config()
 #
+# #production
 # #Honor the 'X-Forwarded-Proto' header for request.is_secure()
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
+
+#production
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
